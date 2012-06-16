@@ -1,0 +1,72 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title> CSS3 Aqua Buttons : &lt;default&gt;</title>
+<style type="text/css">
+@font-face {
+		font-family: 'HighlandGothicFLFRegular';
+		src: url('fonts/HighlandGothicFLF.eot');
+		src: local('HighlandGothicFLF Regular'), local('HighlandGothicFLF'), url('fonts/HighlandGothicFLF.ttf') format('truetype');
+	}
+	    
+ #aquabutton.button{
+  width: 200px;
+  height: 35px;
+  padding: 5px 16px 3px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border: 1px solid #ccc;
+  position: relative;
+
+  /* Label */
+  /* Label */
+  font-family: HighlandGothicFLFRegular, Helvetica, sans-serif;
+  font-size: 25px;
+  color: #ffffff;
+  font-color:#ababab;
+  text-shadow: rgba(10, 10, 10, 0.5) 1px 2px 2px;
+  text-align: center;
+  vertical-align: center;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+#aquabutton.aqua{
+  background-color: rgba(60, 132, 198, 0.8);
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 90%, from(#0b65a1), to(#0e82cf));
+  border-top-color: #0b65a1;
+  border-right-color: #0e82cf;
+  border-left-color: #0e82cf;
+  border-bottom-color: #0e82cf;
+  -webkit-box-shadow:  #1098f2 0px 10px 16px;
+  -moz-box-shadow: #1098f2 0px 10px 16px; /* FF 3.5+ */
+}
+#aquabutton .button .glare {
+  position: absolute;
+  padding: 8px 0;
+ }
+#aquabutton.button .glare {
+  position: absolute;
+  align:center;
+  -webkit-border-radius: 08px;
+  -moz-border-radius: 08px;
+  height: 15px;
+  width: 200px;
+  background-color: rgba(255, 255, 255, 0.25);
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 95%, from(rgba(255, 255, 255, 0.7)), to(rgba(255, 255, 255, 0)));
+}
+
+ #aquabutton.button:hover {
+			text-shadow: rgb(255, 255, 255) 0px 0px 5px;
+		}
+</style>
+</head>
+
+<body>
+<div id="aquabutton" class="button aqua">
+  <div  class="glare"></div>
+ Click Me
+</div>
+</body>
+</html>
